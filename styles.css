@@ -1,6 +1,50 @@
- h1 {
+ * {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+ }
+h1 {
             color: violet;
             background-color: aqua;
-            font-size: 96px;
-            font-weight: 100;
+            font-size: 9.6rem;
+            font-weight: 900;
+            text-transform: capitalize;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
         }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'roboto', arial, cursiva;
+}
+h2 {
+    font-size: 6.4rem;
+}
+p {
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 9rem;
+}
+a {
+    font-size: 2.4rem;
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: blue;
+}
+.bg {
+    height: 100vh; /*tamanho da tela*/
+    width: 100vw;
+    background-color: #555;
+    background-image: url(https://images.unsplash.com/photo-1760532780081-a26e9d92da80?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=1000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
