@@ -48,13 +48,15 @@ a {
     border: solid;
     border-radius: 1.5rem;
     text-decoration: none;
-    transition: transform 0.3ms;
 }
 a:visited {
     color: green;
 }
 a:hover {
     color: blue;
+    transform: scale(1.2);
+    filter: brightness(0.95);
+    transition: transform 0.3ms;
 }
 .bg {
     height: 100vh; /*tamanho da tela*/
