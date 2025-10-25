@@ -1,6 +1,6 @@
  * {
-    margin: 0;
-    padding: 0;
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 :root {
     font-size: 62.5%;
@@ -8,9 +8,23 @@
 body {
     font-family: 'Times New Roman', Times, serif;
  }
+table, td, th {
+    border: 1px solid black;
+}
+table tr:first-child {
+    background-color: steelblue;
+    color: #fff;
+}
+table tr:nth-child(2n + 2) {
+    background-color: #999;
+}
+table {
+    font-size: 2.4rem;
+    border-collapse: separate;
+}
 h1 {
-            color: violet;
-            background-color: aqua;
+            color: rgb(73, 2, 73);
+            background-color: violet;
             font-size: 9.6rem;
             font-weight: 900;
             text-transform: capitalize;
@@ -31,6 +45,10 @@ p {
 a {
     font-size: 2.4rem;
     color: red;
+    border: solid;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3ms;
 }
 a:visited {
     color: green;
@@ -41,10 +59,14 @@ a:hover {
 .bg {
     height: 100vh; /*tamanho da tela*/
     width: 100vw;
-    background-color: #555;
+    background-color: #999;
     background-image: url(https://images.unsplash.com/photo-1760532780081-a26e9d92da80?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=1000);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+ul {
+    padding-left: 2.4rem;
+    font-size: 1.8rem;
 }
