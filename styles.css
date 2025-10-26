@@ -3,7 +3,7 @@
     padding: 0.5rem;
 }
 :root {
-    font-size: 62.5%;
+    font-size: 62.5%; /* Para ajustar a medida da pag e ficar em rem que é uma medida favorável a qlq dispositivo */
 }
 body {
     font-family: 'Times New Roman', Times, serif;
@@ -11,11 +11,11 @@ body {
 table, td, th {
     border: 1px solid black;
 }
-table tr:first-child {
+table tr:first-child { /* trabalha a primeira linha da tabela */
     background-color: steelblue;
     color: #fff;
 }
-table tr:nth-child(2n + 2) {
+table tr:nth-child(2n + 2) { /* trabalha de 2 em 2 */
     background-color: #999;
 }
 table {
@@ -52,11 +52,14 @@ a {
 a:visited {
     color: green;
 }
-a:hover {
+div.btn a:hover {
     color: blue;
-    transform: scale(1.2);
+    transform: translateY(0.8rem) scale(1.05); /* efeito de proeminencia do botão */
+    box-shadow: 0 0.8rem 1.4rem rgba(0,0,0,0.3);
+}
+div.btn a {
+    transition: all 0.3s ease;
     filter: brightness(0.95);
-    transition: transform 0.3ms;
 }
 .bg {
     height: 100vh; /*tamanho da tela*/
