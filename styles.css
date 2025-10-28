@@ -35,41 +35,48 @@ h1 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "roboto", arial, cursiva;
-}
-h2 {
-  font-size: 6.4rem;
-}
-p {
-  font-size: 1.8rem;
-  text-align: justify;
-  text-indent: 9rem;
-}
-a {
-  font-size: 2.4rem;
-  color: red;
-  border: solid;
-  border-radius: 1.5rem;
-  text-decoration: none;
-}
-a:visited {
-  color: green;
-}
-div.btn a:hover {
-  color: blue;
-  transform: translateY(0.8rem) scale(1.05); /* efeito de proeminencia no botão */
-  box-shadow: 0 0.8rem 1.4rem rgba(0, 0, 0, 0.3);
-}
-div.btn a {
+/* h1 { */
+  display: none; /* some completamente */
+  visibility: hidden; /* ainda ocupa o espaço, mas ñ aparece e desaparece o efeito do cursor */
+  opacity: 1; /* ainda ocupa o espaço e deixa cada vez mais transparente conforme diminue o valor */
+  /* } */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "roboto", arial, cursiva;
+  }
+  h2 {
+    font-size: 6.4rem;
+  }
+  p {
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 9rem;
+  }
+  a {
+    font-size: 2.4rem;
+    color: red;
+    border: solid;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    /* cursor: pointer; transf o cursor em mãozinha qdo hover  (achei inútil, pois já fica assim automaticamente) */
+  }
+  a:visited {
+    color: green;
+  }
+  div.btn a:hover {
+    color: blue;
+    box-shadow: 0 0.8rem 1.4rem rgba(0, 0, 0, 0.3);
+    transform /*animação*/: scale(1.6)/*aumenta o tam*/ rotate(30deg)/*rotaciona na tela*/ translateY(10rem)/*faz mover*/;
+    transition: .3s ease-in-out;
+  }
+/* div.btn a {
   transition: all 0.3s ease;
   filter: brightness(0.95);
-}
+}*/
 .bg {
   height: 100vh; /*tamanho da tela*/
   width: 100vw;
@@ -119,3 +126,31 @@ nav.menu {
     position: sticky;
     background-color: blueviolet;
 }
+#companies-table { /* ou pode-se usar .company-tb */
+  /* display: none; */
+}
+[data-company="GOO"] { /* atributo personalizado "data-" */
+  background-color: a cor que quiser; 
+}
+[data-company] {
+
+}
+/* pode-ser aplicar qlq configuração dentro do @media */
+@media screen and (min-width: 1000px /* medida de computador */) and (max-width: 1024) { /* diferenciar tela de dispositivos */
+  .bg {
+    height: 50vh;
+  }
+}
+@media print { /* diferenciar na impressão */
+  .bg {
+    display: none; /* tirar a imagem qdo for imprimir */
+  }
+}
+/* @keyframes Load {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+} */
