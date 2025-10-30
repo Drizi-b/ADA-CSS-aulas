@@ -93,9 +93,12 @@ ul {
 }
 .boxes {
   position: relative;
+  height: calc(100vh);
+  display: grid;
 }
 .box {
-  height: 10rem;
+  font-size: 4rem;
+/*   height: 10rem;
   width: 20rem;
   margin: 1.5rem;
   padding: 1.5rem;
@@ -104,23 +107,23 @@ ul {
   border: 1rem solid red;
   display: inline-block;
   border-radius: 0.4rem;
-  position: relative;
+  position: relative;*/
 }
-.box:nth-child(1) {
-  position: relative; /* "static" desconsidera configurações */
+/* .box:nth-child(1) {
+  position: relative; /* "static" desconsidera configurações
   top: 0rem;
   /* left: 3rem; */
-}
-.box:nth-child(n + 2) {
-  /* display: none; */ /*desaparece tudo */
+/* } */
+/*.box:nth-child(n + 2) {
+  display: none; */ /*desaparece tudo
 }
 nav.menu {
   /* position: fixed; para fixar o menu no topo */
   background-color: turquoise;
   width: 100%; /* fica do tam da tela na horiz */
   height: 7rem; /* tam na vertical */
-  z-index: 1; /* prioridade */
-}
+  z-index: 1; /* prioridade
+}*/
 .contact-list h2 { /* para fixar a primeira letra do contato ao rolar a tela */
     top: 0rem;
     position: sticky;
@@ -135,7 +138,7 @@ nav.menu {
 [data-company] {
 
 }
-/* pode-ser aplicar qlq configuração dentro do @media */
+/* pode-se aplicar qlq configuração dentro do @media */
 @media screen and (min-width: 1000px /* medida de computador */) and (max-width: 1024) { /* diferenciar tela de dispositivos */
   .bg {
     height: 50vh;
@@ -146,7 +149,7 @@ nav.menu {
     display: none; /* tirar a imagem qdo for imprimir */
   }
 }
-/* @keyframes Load {
+/* @keyframes Load { rodinha 
   0% {
     transform: rotateZ(0deg);
   }
