@@ -1,0 +1,11 @@
+<script>
+  const numeroAleatorio = parseInt(Math.random() * 10);
+  let quantidadeTentativas = 1;
+  let numeroUsuario = Number(prompt("Informe um numero de 0 a 10: "));
+  while (numeroAleatorio !== numeroUsuario) {
+    document.write("Voce errou, tente novamente...");
+    numeroUsuario = Number(prompt("Informe um numero de 0 a 10: "));
+    quantidadeTentativas++;
+  }
+  document.write("Acertô Mizeravi!! O numero é: " + numeroAleatorio + ". Acertou em " + quantidadeTentativas + " tentativas");
+</script>
