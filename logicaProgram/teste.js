@@ -15,3 +15,8 @@ for (let i = 0; i < nome.length; i++) {
         break
     }
 }
+console.clear()
+const arr = [2, 45, 32, 4, 15, 89];
+for (const elemento of arr) {
+    console.log(elemento)
+}  
