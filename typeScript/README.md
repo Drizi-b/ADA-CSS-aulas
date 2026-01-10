@@ -1,4 +1,4 @@
-Configuração do TypeScript
+# Configuração do TypeScript
 
 1. Inicializar um proj Node.js.
 2. Instalar o TypeScript.
