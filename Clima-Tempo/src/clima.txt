@@ -1,0 +1,4 @@
+https://openweathermap.org/img/wn/04n@2x.png
+https://openweathermap.org/img/wn/01d@2x.png
+https://api.openweathermap.org/data/2.5/weather?q=teresopolis&appid=a26b5bd4e852dd9dda5437b17d82d84a&lang=pt_brunits=metric
+https://api.openweathermap.org/data/2.5/weather?q=teresopolis&appid=a26b5bd4e852dd9dda5437b17d82d84a&lang=pt_br&units=metric
